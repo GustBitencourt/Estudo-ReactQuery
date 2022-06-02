@@ -1,0 +1,15 @@
+header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+.header__nav--links {
+    text-decoration: none;
+}
