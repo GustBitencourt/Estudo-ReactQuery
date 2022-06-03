@@ -6,6 +6,14 @@ const fetchSuperHeroes = () => {
 };
 
 export const RQSuperHeroes = () => {
+  const onSucess = (data) => {
+    console.log("Efeito colateral after data fetching", data);
+  
+  }
+  const onError = (error) => {
+    console.log("Efeito colateral after encountering some error", error);
+  }
+
   //desestrutra os dados do useQuery
   const { isLoading, data, isError, error, isFetching, refetch } = useQuery(
     "heroes",
@@ -20,7 +28,13 @@ export const RQSuperHeroes = () => {
       // -> refetchInterval: 2000, //refetch data on interval - atualiza o dado a cada 2 segundos seu valor default é false, é desativado quando o usuário sai da janela
       // -> refetchIntervalInBackground: 2000, //refetch data on interval - atualiza o dado a cada 2 segundos seu valor default é false, funciona mesmo quando o usuário sai da janela
 
-      enabled: false, //desabilita o carregamneto do cache - pode reabilitar através da função refetch do useQuery
+      // -> enabled: false, //desabilita o carregamneto do cache - pode reabilitar através da função refetch do useQuery
+
+      //tratamento de erro direto na query
+      onSucess: onSucess,
+      onError: onError,
+
+
     }
   );
 
