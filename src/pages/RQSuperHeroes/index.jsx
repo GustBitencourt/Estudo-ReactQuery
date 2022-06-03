@@ -11,7 +11,8 @@ export const RQSuperHeroes = () => {
     "heroes",
     fetchSuperHeroes,
     {
-      cacheTime: 5000 //tempo de duração da query após sair da página e ir pro lixo
+      //cacheTime: 5000, //tempo de duração da query de requisição permanecer guardada em cache após, sair da página e ir pro lixo - tempo default é de 5 minutos
+      staleTime: 30000, //tempo em que o data será considera "fresco"
     }
   );
 
