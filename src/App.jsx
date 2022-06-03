@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { QueryClientProvider, QueryClient } from 'react-query'
 import { Header } from './components/Header'
 import { Route, Routes } from 'react-router-dom'
 import { Home } from './pages/Home'
@@ -7,17 +7,20 @@ import { RQSuperHeroes } from './pages/RQSuperHeroes'
 
 import './App.css'
 
+const queryClient = new QueryClient();
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <main className="App">
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/super-heroes" element={<SuperHeroes />} />
-        <Route path="/rq-super-heroes" element={<RQSuperHeroes />} />
-      </Routes>
+      <QueryClientProvider client={queryClient} >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/super-heroes" element={<SuperHeroes />} />
+          <Route path="/rq-super-heroes" element={<RQSuperHeroes />} />
+        </Routes>
+      </QueryClientProvider>
     </main>
   )
 }
