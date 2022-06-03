@@ -1,9 +1,13 @@
 import { QueryClientProvider, QueryClient } from 'react-query'
-import { Header } from './components/Header'
+import { ReactQueryDevtools } from 'react-query/devtools'
 import { Route, Routes } from 'react-router-dom'
+
+
 import { Home } from './pages/Home'
 import { SuperHeroes } from './pages/SuperHeroes'
 import { RQSuperHeroes } from './pages/RQSuperHeroes'
+
+import { Header } from './components/Header'
 
 import './App.css'
 
@@ -20,6 +24,7 @@ function App() {
           <Route path="/super-heroes" element={<SuperHeroes />} />
           <Route path="/rq-super-heroes" element={<RQSuperHeroes />} />
         </Routes>
+        <ReactQueryDevtools position="bottom-right"/>
       </QueryClientProvider>
     </main>
   )
