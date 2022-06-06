@@ -1,9 +1,5 @@
-import { useQuery } from "react-query";
-import axios from "axios";
+import { useSuperHeroesData } from "../../hooks/useSuperHeroesData";
 
-const fetchSuperHeroes = () => {
-  return axios.get("http://localhost:4000/superheroes");
-};
 
 export const RQSuperHeroes = () => {
   const onSucess = (data) => {
@@ -14,31 +10,7 @@ export const RQSuperHeroes = () => {
   };
 
   //desestrutra os dados do useQuery
-  const { isLoading, data, isError, error, isFetching, refetch } = useQuery(
-    "heroes",
-    fetchSuperHeroes,
-    {
-      // -> cacheTime: 5000, //tempo de duração da query de requisição permanecer guardada em cache após, sair da página e ir pro lixo - tempo default é de 5 minutos
-      // -> staleTime: 30000, //tempo em que o data será considera "fresco" - o valor default é 0
-      // -> refetchOnMount: true, //refetch data on mount of component - similar a forma tradicional
-      // -> refetchOnWindowFocus: true, //refetch data on window focus - atualiza o dado quando saimos e voltamos da tela - dafault é true
-
-      // POOLING
-      // -> refetchInterval: 2000, //refetch data on interval - atualiza o dado a cada 2 segundos seu valor default é false, é desativado quando o usuário sai da janela
-      // -> refetchIntervalInBackground: 2000, //refetch data on interval - atualiza o dado a cada 2 segundos seu valor default é false, funciona mesmo quando o usuário sai da janela
-
-      // -> enabled: false, //desabilita o carregamneto do cache - pode reabilitar através da função refetch do useQuery
-
-      //tratamento de erro direto na query
-      onSucess: onSucess,
-      onError: onError,
-
-      select: (data) => {
-        const selectHeroNames = data.data.map((hero) => hero.name);
-        return selectHeroNames;
-      }, // function select transforma os dados recebidos da api alterando sua estrura - pode se usar filter também
-    }
-  );
+  const { isLoading, data, isError, error, isFetching, refetch } = useSuperHeroesData(onSucess, onError);
 
   if (isLoading || isFetching) {
     return <h2>Loading...</h2>;
