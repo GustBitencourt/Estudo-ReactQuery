@@ -11,6 +11,7 @@ import { Header } from './components/Header'
 
 import './App.css'
 import { RQSuperHeroDetail } from './pages/RQSuperHeroDetail.js'
+import { QueriParalela } from './pages/QueriParalela'
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/super-heroes" element={<SuperHeroes />} />
           <Route path="/rq-super-heroes" element={<RQSuperHeroes />} />
           <Route path="/rq-super-heroes/:heroId" element={<RQSuperHeroDetail />} />
+          <Route path="/query-paralela" element={<QueriParalela />} />
         </Routes>
         <ReactQueryDevtools position="bottom-right"/>
       </QueryClientProvider>

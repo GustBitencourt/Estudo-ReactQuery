@@ -47,6 +47,10 @@
         <li>
             -> select é uma função que podemos selecionar uma parte do objeto data, com map ou filter, que queremos utilizar no front-end
         </li>
+        <h2>Query Paralel</h2>
+        <li>
+            É possível fazer a chamada de dois ou mais useQuerys, porem é necessário os uso de ALIAS em seus objetos data
+        </li>
     </ul>
 </div>
 

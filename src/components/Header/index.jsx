@@ -14,7 +14,10 @@ export const Header = () => {
             <Link className="header__nav--links" to={"/super-heroes"}>SuperHeroes</Link>
           </li>
           <li>
-            <Link className="header__nav--links" to={"rq-super-heroes"}>RQSuperHeroes</Link>
+            <Link className="header__nav--links" to={"/rq-super-heroes"}>RQSuperHeroes</Link>
+          </li>
+          <li>
+            <Link className="header__nav--links" to={"/query-paralela"}>Query Paralel</Link>
           </li>
         </ul>
       </nav>
