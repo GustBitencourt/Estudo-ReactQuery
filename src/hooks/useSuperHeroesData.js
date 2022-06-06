@@ -11,9 +11,9 @@ export const useSuperHeroesData = ( onSucess, onError ) => {
     onSucess: onSucess,
     onError: onError,
 
-    select: (data) => {
+    /* select: (data) => {
       const selectHeroNames = data.data.map((hero) => hero.name);
       return selectHeroNames;
-    }, // function select transforma os dados recebidos da api alterando sua estrura - pode se usar filter também
+    }, // function select transforma os dados recebidos da api alterando sua estrura - pode se usar filter também */
   });
 };

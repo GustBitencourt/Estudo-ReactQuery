@@ -1,4 +1,5 @@
 import { useSuperHeroesData } from "../../hooks/useSuperHeroesData";
+import { Link } from 'react-router-dom'
 
 
 export const RQSuperHeroes = () => {
@@ -22,24 +23,25 @@ export const RQSuperHeroes = () => {
 
   return (
     <div>
-      {/* <h1>RQSuperHeroes</h1>
+      <h1>RQSuperHeroes</h1>
       <button onClick={refetch}>Fetch</button>
 
       {
         //confirmar a existencia do data
         data?.data.map((hero) => (
-          <div key={hero.id}>{hero.name}</div>
+          <div key={hero.id}>
+            <Link to={`/rq-super-heroes/${hero.id}`} >{hero.name}</Link>
+          </div>
         ))
-      } */}
+      }
 
-      <h1>RQSuperHeroes - function select</h1>
-
+      {/* <h1>RQSuperHeroes - function select</h1>
       {
         //só é necessário um data a partir do select
         data.map((heroName) => (
           <div key={heroName}>{heroName}</div>
         ))
-      }
+      } */}
     </div>
   );
 };
