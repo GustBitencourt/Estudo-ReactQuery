@@ -19,6 +19,9 @@ export const Header = () => {
           <li>
             <Link className="header__nav--links" to={"/query-paralela"}>Query Paralel</Link>
           </li>
+          <li>
+            <Link className="header__nav--links" to={"/dinamic-paralel"}>Query Paralel</Link>
+          </li>
         </ul>
       </nav>
     </header>

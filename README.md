@@ -51,6 +51,9 @@
         <li>
             É possível fazer a chamada de dois ou mais useQuerys, porem é necessário os uso de ALIAS em seus objetos data
         </li>
+        <h2>useQueries</h2>
+        <li>Recebe dois parametros como argumento o queryKey, onde passamos a stringKey e o id num array, e como segundo parametro uma função responsavel pela fetchData</li>
+        <li>Retorna um array de queries Results</li>
     </ul>
 </div>
 
