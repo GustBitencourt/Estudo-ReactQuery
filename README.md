@@ -54,6 +54,9 @@
         <h2>useQueries</h2>
         <li>Recebe dois parametros como argumento o queryKey, onde passamos a stringKey e o id num array, e como segundo parametro uma função responsavel pela fetchData</li>
         <li>Retorna um array de queries Results</li>
+        <h3>Dependent Queries</h3>
+        <li>Queries executadas uma após a outra</li>
+        <li>Carrega três logs no useQuerisDevtool, a primeira chamada como nula, a segunda carregando o email do usuario, a terceira carregando os cursos ligados ao email</li>
     </ul>
 </div>
 
