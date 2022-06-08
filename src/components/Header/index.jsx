@@ -28,6 +28,9 @@ export const Header = () => {
           <li>
             <Link className="header__nav--links" to={"/pagination"}>QueriesPaginacao</Link>
           </li>
+          <li>
+            <Link className="header__nav--links" to={"/infinite"}>InfiniteQueries</Link>
+          </li>
         </ul>
       </nav>
     </header>

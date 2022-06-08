@@ -11,6 +11,7 @@ import { QueriParalela } from './pages/QueriParalela'
 import { DinamicParalel } from './pages/DinamicParalel'
 import { DependentQueries } from './pages/DependentQueries'
 import { QueriesPaginacao } from './pages/QueriesPaginacao'
+import { InfiniteQueries } from './pages/InfiniteQueries'
 
 import { Header } from './components/Header'
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/dinamic-paralel" element={<DinamicParalel heroIds={[1, 3]} />} />
           <Route path="/dependent-queries" element={<DependentQueries email="example@mail.com" />} />
           <Route path="/pagination" element={<QueriesPaginacao />} />
+          <Route path="/infinite" element={<InfiniteQueries />} />
         </Routes>
         <ReactQueryDevtools position="bottom-right"/>
       </QueryClientProvider>

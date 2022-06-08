@@ -79,6 +79,23 @@
         <li>
             keepPreviousData mantem o dado da pagina passada salvo para não interpretar toda mudança como uma nova query          
         </li>
+        <h2>useInfiniteQueries</h2>
+        <li>
+            Utilizada para paginação em apis com muitos dados
+        </li>
+        <li>
+            ao contrario do querie normal que retorna data?.data o useInfiniteQueries retorna data?.pages dando acesso ao grupo de dados e seu index e em um novo map poderemos manipular os dados - verificar InfiniteQueries em page
+        </li>
+        <li>
+            desestrutura hasNextPage para verificar sem tem mais itens para carregar
+        </li>
+        <li>
+            desestrutura a função fetchNextPage para avançar a pagina
+        </li>
+        <li>
+            isFetchingNextPage verifica o carregamento do próximo grupo de dados        
+        </li>
+        <h2>Mutations</h2>
     </ul>
 </div>
 
