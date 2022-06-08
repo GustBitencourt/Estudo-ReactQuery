@@ -1,4 +1,4 @@
-import { useQuery } from "react-query";
+import { useQuery, useQueryClient } from "react-query";
 import axios from "axios";
 
 
@@ -10,5 +10,25 @@ const fetchSuperHero = ({ queryKey }) => {
 
 //useQuery para informação unica
 export const useSuperHeroData = ( heroId, onSucess, onError ) => {
-  return useQuery(['super-hero', heroId], fetchSuperHero);
+  //queryClient manipula o cache
+  const queryClient = useQueryClient();
+  return useQuery(['super-hero', heroId], fetchSuperHero, {
+    initialData: () => {
+      //buscamos o data em 'heroes'
+      //caso ele não encontre ele acessa o data e busca o id do heroi
+      const hero = queryClient.getQueryData('heroes')?.data?.find((hero) => {
+        hero.id === parseInt(heroId);
+        //se encontrarmo o heroi retornamos um objeto com o data de heroi
+        if(hero) {
+          return {
+            data: hero
+          }
+
+        } else {
+          // react-query seta o undefined para um estado de loading evitando a quebra da aplicação
+          return undefined;
+        }
+      })
+    }
+  });
 };

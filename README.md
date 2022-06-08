@@ -52,11 +52,26 @@
             É possível fazer a chamada de dois ou mais useQuerys, porem é necessário os uso de ALIAS em seus objetos data
         </li>
         <h2>useQueries</h2>
-        <li>Recebe dois parametros como argumento o queryKey, onde passamos a stringKey e o id num array, e como segundo parametro uma função responsavel pela fetchData</li>
-        <li>Retorna um array de queries Results</li>
+        <li>
+            Recebe dois parametros como argumento o queryKey, onde passamos a stringKey e o id num array, e como segundo parametro uma função responsavel pela fetchData
+        </li>
+        <li>
+            Retorna um array de queries Results
+        </li>
         <h3>Dependent Queries</h3>
-        <li>Queries executadas uma após a outra</li>
-        <li>Carrega três logs no useQuerisDevtool, a primeira chamada como nula, a segunda carregando o email do usuario, a terceira carregando os cursos ligados ao email</li>
+        <li>
+            Queries executadas uma após a outra
+        </li>
+        <li>
+            Carrega três logs no useQuerisDevtool, a primeira chamada como nula, a segunda carregando o email do usuario, a terceira carregando os cursos ligados ao email, colocamos um !! na primeira chama no enabled da segunda para ela só ser chamada quando for verificada sua existencia 
+        </li>
+        <h2>useQuerieClient</h2>
+        <li>
+            Para manipular o queryClient do provider            
+        </li>
+        <li>
+            Podemos acessar o query cache e setar um initialData evitando, avançando no fetch da aplicação, já buscando o dado de um herói em sua lista            
+        </li>
     </ul>
 </div>
 
