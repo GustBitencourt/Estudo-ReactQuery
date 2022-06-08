@@ -10,6 +10,7 @@ import { RQSuperHeroDetail } from './pages/RQSuperHeroDetail.js'
 import { QueriParalela } from './pages/QueriParalela'
 import { DinamicParalel } from './pages/DinamicParalel'
 import { DependentQueries } from './pages/DependentQueries'
+import { QueriesPaginacao } from './pages/QueriesPaginacao'
 
 import { Header } from './components/Header'
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/query-paralela" element={<QueriParalela />} />
           <Route path="/dinamic-paralel" element={<DinamicParalel heroIds={[1, 3]} />} />
           <Route path="/dependent-queries" element={<DependentQueries email="example@mail.com" />} />
+          <Route path="/pagination" element={<QueriesPaginacao />} />
         </Routes>
         <ReactQueryDevtools position="bottom-right"/>
       </QueryClientProvider>

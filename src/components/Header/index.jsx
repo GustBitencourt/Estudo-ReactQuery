@@ -25,6 +25,9 @@ export const Header = () => {
           <li>
             <Link className="header__nav--links" to={"/dependent-queries"}>Dependent Queries</Link>
           </li>
+          <li>
+            <Link className="header__nav--links" to={"/pagination"}>QueriesPaginacao</Link>
+          </li>
         </ul>
       </nav>
     </header>

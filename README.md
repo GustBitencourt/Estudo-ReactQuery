@@ -72,6 +72,13 @@
         <li>
             Podemos acessar o query cache e setar um initialData evitando, avançando no fetch da aplicação, já buscando o dado de um herói em sua lista            
         </li>
+        <h2>Paginação</h2>
+        <li>
+            Necessário um useState inicial com o numero da pagina
+        </li>
+        <li>
+            keepPreviousData mantem o dado da pagina passada salvo para não interpretar toda mudança como uma nova query          
+        </li>
     </ul>
 </div>
 
