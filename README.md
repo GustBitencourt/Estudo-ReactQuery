@@ -106,9 +106,24 @@
             se tivermos multiplos post utilizamos alias pro mutate       
         </li>
         <li>
-            necessário auxilio do useQueryClient para dar refetch nos dados após o post bem sucedido, invalidando o dado antigo e o atualizando     
+            necessário auxilio do useQueryClient.setQueryData para dar refetch nos dados após o post bem sucedido, invalidando o dado antigo e o atualizando     
         </li>
-        
+        <li>
+            Podemos utilizar ainda o useQueryClient.setQueryData para melhorar o fluxo do post evitando uma requisição dos dados novos, apenas adicionando o dado junto com os outros
+        </li>
+        <h2>Optimistic Updates</h2>
+        <li>
+            utiliza as callbacks onMutation, onError, onSettled
+        </li>
+        <li>
+            onMutation é assincrono, recebe o novo dado, cancela a query antiga, seta a nova query
+        </li>
+        <li>
+            onError recebe três arugumentos, o erro e o dado que são opcionais e o contexto que é onde setaremos a query antiga
+        </li>
+         <li>
+            onSettled ocorre independente se há sucesso ou erro ela é responsável pelo refetch dos dados
+        </li>        
     </ul>
 </div>
 

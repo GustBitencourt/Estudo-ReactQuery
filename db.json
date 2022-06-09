@@ -24,6 +24,16 @@
       "name": "Flash",
       "alterEgo": "Barry Allen",
       "id": 5
+    },
+    {
+      "name": "Green Arrow",
+      "alterEgo": "Oliver Queen",
+      "id": 6
+    },
+    {
+      "name": "Aquaman",
+      "alterEgo": "Arhutr Curry",
+      "id": 7
     }
   ],
   "friends": [
