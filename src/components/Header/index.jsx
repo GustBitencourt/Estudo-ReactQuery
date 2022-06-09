@@ -31,6 +31,9 @@ export const Header = () => {
           <li>
             <Link className="header__nav--links" to={"/infinite"}>InfiniteQueries</Link>
           </li>
+          <li>
+            <Link className="header__nav--links" to={"/mutation"}>Mutation Post</Link>
+          </li>
         </ul>
       </nav>
     </header>

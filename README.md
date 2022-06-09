@@ -96,6 +96,16 @@
             isFetchingNextPage verifica o carregamento do próximo grupo de dados        
         </li>
         <h2>Mutations</h2>
+        <li>
+            Lida com post, update, delete        
+        </li>
+        <li>
+            mutate é a função que lida com a requisição de POST, recebdno os dados como parametro
+        </li>
+        <li>
+            se tivermos multiplos post utilizamos alias pro mutate       
+        </li>
+
     </ul>
 </div>
 

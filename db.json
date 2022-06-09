@@ -1,79 +1,88 @@
 {
-    "superheroes": [
-      {
-        "id": 1,
-        "name": "Batman",
-        "alterEgo": "Bruce Wayne"
-      },
-      {
-        "id": 2,
-        "name": "Superman",
-        "alterEgo": "Clark Kent"
-      },
-      {
-        "id": 3,
-        "name": "Wonder Woman",
-        "alterEgo": "Princess Diana"
-      }
-    ],
-    "friends": [
-      {
-        "id": 1,
-        "name": "Joey Tribbiani"
-      },
-      {
-        "id": 2,
-        "name": "Chandler Bing"
-      },
-      {
-        "id": 3,
-        "name": "Rachel Green"
-      }
-    ],
-    "users": [
-      {
-        "id": "example@mail.com",
-        "channelId": "codevolution"
-      }
-    ],
-    "channels": [
-      {
-        "id": "codevolution",
-        "courses": ["react", "angular", "vue"]
-      }
-    ],
-    "colors": [
-      {
-        "id": 1,
-        "label": "red"
-      },
-      {
-        "id": 2,
-        "label": "blue"
-      },
-      {
-        "id": 3,
-        "label": "green"
-      },
-      {
-        "id": 4,
-        "label": "yellow"
-      },
-      {
-        "id": 5,
-        "label": "orange"
-      },
-      {
-        "id": 6,
-        "label": "purple"
-      },
-      {
-        "id": 7,
-        "label": "black"
-      },
-      {
-        "id": 8,
-        "label": "white"
-      }
-    ]
-  }
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "alterEgo": "Princess Diana"
+    },
+    {
+      "name": "Green Lantern",
+      "alterEgo": "Hal Jordan",
+      "id": 4
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Joey Tribbiani"
+    },
+    {
+      "id": 2,
+      "name": "Chandler Bing"
+    },
+    {
+      "id": 3,
+      "name": "Rachel Green"
+    }
+  ],
+  "users": [
+    {
+      "id": "example@mail.com",
+      "channelId": "codevolution"
+    }
+  ],
+  "channels": [
+    {
+      "id": "codevolution",
+      "courses": [
+        "react",
+        "angular",
+        "vue"
+      ]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "red"
+    },
+    {
+      "id": 2,
+      "label": "blue"
+    },
+    {
+      "id": 3,
+      "label": "green"
+    },
+    {
+      "id": 4,
+      "label": "yellow"
+    },
+    {
+      "id": 5,
+      "label": "orange"
+    },
+    {
+      "id": 6,
+      "label": "purple"
+    },
+    {
+      "id": 7,
+      "label": "black"
+    },
+    {
+      "id": 8,
+      "label": "white"
+    }
+  ]
+}

@@ -2,7 +2,6 @@ import { QueryClientProvider, QueryClient } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import { Route, Routes } from 'react-router-dom'
 
-
 import { Home } from './pages/Home'
 import { SuperHeroes } from './pages/SuperHeroes'
 import { RQSuperHeroes } from './pages/RQSuperHeroes'
@@ -12,6 +11,7 @@ import { DinamicParalel } from './pages/DinamicParalel'
 import { DependentQueries } from './pages/DependentQueries'
 import { QueriesPaginacao } from './pages/QueriesPaginacao'
 import { InfiniteQueries } from './pages/InfiniteQueries'
+import { RQSuperHeroesMutation } from './pages/RQSuperHeroesMutation'
 
 import { Header } from './components/Header'
 
@@ -35,6 +35,7 @@ function App() {
           <Route path="/dependent-queries" element={<DependentQueries email="example@mail.com" />} />
           <Route path="/pagination" element={<QueriesPaginacao />} />
           <Route path="/infinite" element={<InfiniteQueries />} />
+          <Route path="/mutation" element={<RQSuperHeroesMutation />} />
         </Routes>
         <ReactQueryDevtools position="bottom-right"/>
       </QueryClientProvider>
