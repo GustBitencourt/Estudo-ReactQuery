@@ -19,6 +19,11 @@
       "name": "Green Lantern",
       "alterEgo": "Hal Jordan",
       "id": 4
+    },
+    {
+      "name": "Flash",
+      "alterEgo": "Barry Allen",
+      "id": 5
     }
   ],
   "friends": [

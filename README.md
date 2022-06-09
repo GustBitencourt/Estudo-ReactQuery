@@ -105,7 +105,10 @@
         <li>
             se tivermos multiplos post utilizamos alias pro mutate       
         </li>
-
+        <li>
+            necessário auxilio do useQueryClient para dar refetch nos dados após o post bem sucedido, invalidando o dado antigo e o atualizando     
+        </li>
+        
     </ul>
 </div>
 

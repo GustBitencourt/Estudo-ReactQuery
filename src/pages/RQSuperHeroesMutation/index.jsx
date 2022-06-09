@@ -52,7 +52,6 @@ export const RQSuperHeroesMutation = () => {
         
         <button onClick={handleAddHero}>Add Hero</button>
       </div>
-      <button onClick={refetch}>Fetch</button>
       {
         //confirmar a existencia do data
         data?.data.map((hero) => (
